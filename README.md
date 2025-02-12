@@ -18,23 +18,23 @@ The dataset should be **inside a ZIP file** (`training_set.zip`) containing **tw
 ---
 ##**📜 Code Overview**
 **1️⃣ Extract and Preprocess Images**
-Converts images to grayscale
-Resizes to 64x64 pixels
-Extracts HOG features
-**2️⃣ Balance Dataset**
-Uses RandomUnderSampler() to prevent bias
-Ensures equal number of cat and dog images
-**3️⃣ Normalize Features**
-Applies StandardScaler() for better SVM training
-**4️⃣ Train SVM Model**
-Uses SVC(kernel='rbf', C=1, gamma='scale')
+Converts images to grayscale<BR>
+Resizes to 64x64 pixels<BR>
+Extracts HOG features<BR>
+**2️⃣ Balance Dataset**<BR>
+Uses RandomUnderSampler() to prevent bias<BR>
+Ensures equal number of cat and dog images<BR>
+**3️⃣ Normalize Features**<BR>
+Applies StandardScaler() for better SVM training<BR>
+**4️⃣ Train SVM Model**<BR>
+Uses SVC(kernel='rbf', C=1, gamma='scale')<BR>
 
-**5️⃣ Evaluate Model**
-Prints accuracy & classification report
-**6️⃣ Test on a New Image**
-Loads test image
-Extracts HOG features
-Normalizes & predicts using the trained model
-Displays test image with predicted label
+**5️⃣ Evaluate Model**<BR>
+Prints accuracy & classification report<BR>
+**6️⃣ Test on a New Image**<BR>
+Loads test image<BR>
+Extracts HOG features<BR>
+Normalizes & predicts using the trained model<BR>
+Displays test image with predicted label<BR>
 
 
