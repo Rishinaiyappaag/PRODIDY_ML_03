@@ -16,7 +16,7 @@ This project implements an **SVM-based machine learning model** to classify imag
 The dataset should be **inside a ZIP file** (`training_set.zip`) containing **two folders**:
 <BR>
 ---
-**##📜 Code Overview** <BR>
+**📜 Code Overview** <BR>
 **1️⃣ Extract and Preprocess Images**
 Converts images to grayscale<BR>
 Resizes to 64x64 pixels<BR>
