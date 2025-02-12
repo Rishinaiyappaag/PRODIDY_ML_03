@@ -14,4 +14,27 @@ This project implements an **SVM-based machine learning model** to classify imag
 
 ## 📂 Dataset Structure
 The dataset should be **inside a ZIP file** (`training_set.zip`) containing **two folders**:
+<BR>
+---
+##**📜 Code Overview**
+**1️⃣ Extract and Preprocess Images**
+Converts images to grayscale
+Resizes to 64x64 pixels
+Extracts HOG features
+**2️⃣ Balance Dataset**
+Uses RandomUnderSampler() to prevent bias
+Ensures equal number of cat and dog images
+**3️⃣ Normalize Features**
+Applies StandardScaler() for better SVM training
+**4️⃣ Train SVM Model**
+Uses SVC(kernel='rbf', C=1, gamma='scale')
+
+**5️⃣ Evaluate Model**
+Prints accuracy & classification report
+**6️⃣ Test on a New Image**
+Loads test image
+Extracts HOG features
+Normalizes & predicts using the trained model
+Displays test image with predicted label
+
 
